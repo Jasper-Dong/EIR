@@ -176,6 +176,30 @@ src/intent.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EIR.dir\build.make CMakeFiles/EIR.dir/src/intent.cpp.s
 .PHONY : src/intent.cpp.s
 
+src/place.obj: src/place.cpp.obj
+.PHONY : src/place.obj
+
+# target to build an object file
+src/place.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EIR.dir\build.make CMakeFiles/EIR.dir/src/place.cpp.obj
+.PHONY : src/place.cpp.obj
+
+src/place.i: src/place.cpp.i
+.PHONY : src/place.i
+
+# target to preprocess a source file
+src/place.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EIR.dir\build.make CMakeFiles/EIR.dir/src/place.cpp.i
+.PHONY : src/place.cpp.i
+
+src/place.s: src/place.cpp.s
+.PHONY : src/place.s
+
+# target to generate assembly for a file
+src/place.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EIR.dir\build.make CMakeFiles/EIR.dir/src/place.cpp.s
+.PHONY : src/place.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +215,9 @@ help:
 	@echo ... src/intent.obj
 	@echo ... src/intent.i
 	@echo ... src/intent.s
+	@echo ... src/place.obj
+	@echo ... src/place.i
+	@echo ... src/place.s
 .PHONY : help
 
 

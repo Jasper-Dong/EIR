@@ -3,4 +3,4 @@ project(EIR)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(EIR main.cpp src/intent.h src/intent.cpp)
+add_executable(EIR main.cpp src/intent.h src/intent.cpp src/place.cpp src/place.h)

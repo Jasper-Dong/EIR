@@ -3,24 +3,26 @@
 //
 #include <string>
 #include <regex>
-#include "intent.h"
 
 using namespace std;
 
-regex de_noun_pattern("the ([a-z]+) ");
-regex ind_noun_pattern("an* ([a-z]+) ([a-z]+)");
+// define regex patterns to extract words
+// with (in)definite article
+regex de_word_pattern("the ([a-z]+)");
+regex ind_word_pattern("an* ([a-z]+) ([a-z]+)");
 
+// extract the intent word from a string
 string extract_intent_word(string input) {
     smatch match;
-    string noun = "";
+    string word = "";
 
-    if (regex_search(input, match, de_noun_pattern))
-        noun = match[1].str();
+    if (regex_search(input, match, de_word_pattern))
+        word = match[1].str();
     else {
-        regex_search(input, match, ind_noun_pattern);
-        noun = match[2].str();
+        regex_search(input, match, ind_word_pattern);
+        word = match[2].str();
     }
-    noun[0] = toupper(noun[0]);
+    word[0] = toupper(word[0]);
 
-    return noun;
+    return word;
 }

@@ -89,6 +89,12 @@
 		<Unit filename="C:/Users/Jasper/Desktop/Career/Benz/MBition/Embedded Intent Recognizer/EIR/src/intent.h">
 			<Option target="EIR"/>
 		</Unit>
+		<Unit filename="C:/Users/Jasper/Desktop/Career/Benz/MBition/Embedded Intent Recognizer/EIR/src/place.cpp">
+			<Option target="EIR"/>
+		</Unit>
+		<Unit filename="C:/Users/Jasper/Desktop/Career/Benz/MBition/Embedded Intent Recognizer/EIR/src/place.h">
+			<Option target="EIR"/>
+		</Unit>
 		<Unit filename="C:/Users/Jasper/Desktop/Career/Benz/MBition/Embedded Intent Recognizer/EIR/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
