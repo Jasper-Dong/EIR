@@ -11,8 +11,8 @@ using namespace std;
 regex de_word_pattern("the ([a-z]+)");
 regex ind_word_pattern("an* ([a-z]+) ([a-z]+)");
 
-// extract the intent word from a string
-string extract_intent_word(string input) {
+// extract the intent from a string
+string extract_intent(string input) {
     smatch match;
     string word = "";
 

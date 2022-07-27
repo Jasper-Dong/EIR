@@ -5,6 +5,6 @@
 #define EIR_INTENT_H
 using namespace std;
 
-string extract_intent_word(string input);
+string extract_intent(string input);
 
 #endif //EIR_INTENT_H
