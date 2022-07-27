@@ -1,0 +1,2 @@
+# EIR
+Embedded Intent Recognizer
